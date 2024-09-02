@@ -25,6 +25,7 @@ models:
     sources:
       +materialized: ephemeral
     staging:
+      +schema: staging
       +materialized: table 
 
 
