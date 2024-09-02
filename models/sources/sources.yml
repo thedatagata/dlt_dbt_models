@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: google_analytics_data
+    tables: 
+      - name: src_sessions_fct
+        description: Each row from each GA File Dump represents a session. The column within that file containing pageview information has been used to create its own table.
+        columns: 
+          - name: user_id
+          - name: session_id
+          - name: session_start_time 
+          - name: session_sequence_number 
+          - name: session_date
+          - name: session_pageview_cnt
+          - name: session_order_cnt
+          - name: session_revenue 
+          - name: session_total_revenue 
+          - name: session_is_first_visit
+          - name: session_duration
+          - name: session_browser
+          - name: session_os 
+          - name: session_is_mobile
+          - name: session_device_category
+          - name: session_source
+          - name: session_medium
+          - name: channel_grouping
+            identifier: session_marketing_channel 
+          - name: session_city
+          - name: session_region
+          - name: session_country

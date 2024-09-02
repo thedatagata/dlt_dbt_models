@@ -1,0 +1,7 @@
+dbt_models:
+  target: prod
+  outputs:
+    prod:
+      type: duckdb
+      path: ../data/ga_data.duckdb
+      threads: 4

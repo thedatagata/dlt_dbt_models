@@ -1,0 +1,30 @@
+name: 'dlt_dbt_demo'
+version: '1.0.0'
+
+
+profile: 'dbt_models'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:  
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  dlt_dbt_demo:
+    enabled: false
+
+models:
+  dbt_dbt_demo:
+    sources:
+      +materialized: ephemeral
+    staging:
+      +materialized: table 
+
+

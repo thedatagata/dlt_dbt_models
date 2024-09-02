@@ -1,0 +1,4 @@
+target
+tests
+logs
+dbt_packages
