@@ -21,7 +21,7 @@ seeds:
     enabled: false
 
 models:
-  dbt_dbt_demo:
+  dlt_dbt_demo:
     sources:
       +materialized: ephemeral
     staging:
