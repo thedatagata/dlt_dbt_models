@@ -3,5 +3,5 @@ dbt_models:
   outputs:
     prod:
       type: duckdb
-      path: ../data/ga_data.duckdb
+      path: ../data/data_swamp.duckdb
       threads: 4
