@@ -3,7 +3,7 @@ WITH
       AS 
         (
           {{ dbt_utils.deduplicate(
-            relation=source('google_analytics_data', 'src_sessions_fct'),
+            relation=source('raw_data', 'src_sessions_fct'),
             partition_by='user_id, session_id',
             order_by="session_start_time desc",
             )
