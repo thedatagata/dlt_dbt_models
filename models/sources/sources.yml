@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: raw_data
+  - name: src_google_analytics
     tables: 
-      - name: src_sessions_fct
+      - name: src_ga_sessions_fct
         description: Each row from each GA File Dump represents a session. The column within that file containing pageview information has been used to create its own table.
         columns: 
           - name: user_id
